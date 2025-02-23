@@ -1,0 +1,12 @@
+/* CSS for Profile Page */
+
+
+/* Highlights the "Profile" button when on the profile page */
+#profileBtn {
+    background-color: #49773c;
+}
+
+/* Sets the background color for the profile page */
+body {
+    background-color: #b3d4aa;
+}

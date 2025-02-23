@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>User Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Violet Avenue Gardeners</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li id="homeBtn" class="clicky">Home</li>
+            <li id="registrationBtn" class="clicky">Registration</li>
+            <li id="loginBtn" class="clicky">Login</li>
+            <li id="profileBtn" class="clicky">Profile</li>
+            <li id="membersBtn" class="clicky">Members</li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="mainContent">
+            <article>
+                <h1>User Profile</h1>
+                <p>You can update your account information below.</p>
+
+                <form id="profileForm">
+                    <input type="hidden" id="userId" name="userId" value="<%= user._id %>">
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" value="<%= user.email %>"><br><br>
+
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" id="firstName" name="firstName" value="<%= user.firstName %>" required><br><br>
+
+                    <label for="lastName">Last Name:</label><br>
+                    <input type="text" id="lastName" name="lastName" value="<%= user.lastName %>" required><br><br>
+
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob" value="<%= user.dob %>" required><br><br>
+
+                    <label for="phoneNumber">Phone Number:</label><br>
+                    <input type="text" id="phoneNumber" name="phoneNumber" value="<%= user.phoneNumber %>"
+                        required><br><br>
+
+                    <label for="zipCode">Your Zip Code:</label><br>
+                    <input type="text" id="zipCode" name="zipCode" value="<%= user.zipCode %>" required><br><br>
+
+                    <p>You can set a preference for the default weather displayed on the home page:</p>
+                    <label for="zipCodePref">Zip Code for weather:</label><br>
+                    <input type="text" id="zipCodePref" name="zipCodePref" value="<%= user.zipCodePref %>"><br><br>
+
+                    <button type="submit">Save Changes</button>
+                </form>
+
+            </article>
+        </div>
+    </section>
+
+    <script src="/js/global.js"></script>
+    <script src="/js/profile.js"></script>
+
+</body>
+
+</html>

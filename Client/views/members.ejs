@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/members.css">
+    <title>Members</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Violet Avenue Gardeners</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li id="homeBtn" class="clicky">Home</li>
+            <li id="registrationBtn" class="clicky">Registration</li>
+            <li id="loginBtn" class="clicky">Login</li>
+            <li id="profileBtn" class="clicky">Profile</li>
+            <li id="membersBtn" class="clicky">Members</li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="mainContent">
+            <h2>Welcome, <%= user.firstName %>!</h2>
+
+            <div class="membersBox">
+                <h1>Joanna Picciano</h1>
+                <img src="/images/members/JojoLavender.jpg" /><img src="/images/members/JojoHydrangea.jpg" />
+                <p>Joanna hates bugs and dirt but loves flowers.</p>
+            </div>
+
+            <div class="membersBox">
+                <h1>Lily Primrose Picciano</h1>
+                <img src="/images/members/Lily.jpg" />
+                <p>Lily's second favorite hobby is digging holes in her yard.</p>
+                <p>Her first is stealing socks.</p>
+            </div>
+
+            <div class="membersBox">
+                <h1>Wink Picciano</h1>
+                <img src="/images/members/WinkFarmDog.JPG" />
+                <p>2006-2022</p>
+                <p>The best farm dog.</p>
+            </div>
+
+        </div>
+    </section>
+    
+    <script src="/js/global.js"></script>
+    <script src="/js/members.js"></script>
+
+</body>
+
+<footer>
+</footer>
+
+</html>

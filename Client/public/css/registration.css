@@ -1,0 +1,52 @@
+/* CSS for Registration Page */
+
+
+/* Highlights the "Registration" button when on the registration page */
+#registrationBtn {
+    background-color: #49773c;
+}
+
+/* Sets the background color for the registration page */
+body {
+    background-color: #b3d4aa;
+}
+
+/* Ensures main content sections have a matching background */
+article, aside {
+    background-color: #b3d4aa;
+}
+
+/* Centers the image inside <aside> */
+aside {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* Ensures images scale properly within their container */
+img {
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+    display: block; 
+}
+
+/* Adds a shadow to images inside <aside> */
+aside img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Typography */
+h1 {
+    font-size: 25px;
+}
+
+/* Adds space below the form to keep it from touching the bottom */
+form {
+    margin-bottom: 30px; 
+}
+
+/* Ensures extra spacing at the bottom of the page */
+.mainContent {
+    padding-bottom: 40px; 
+}

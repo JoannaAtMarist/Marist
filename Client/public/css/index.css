@@ -1,0 +1,45 @@
+/* CSS for Index/Splash Page */
+
+
+/* Fade-In Animation */ 
+/* Creates a pulsing fade effect for the "Press Spacebar to Continue" message */
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        animation-timing-function: ease-in-out;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Sets the splash page background */
+body {
+    background: url('/images/violet-flower-purple-nature-nature-landscapes-077b71.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Styles the "Press Spacebar to Continue" message */
+#continue {
+    animation: fade 4s infinite;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    color: #f9ebfa;
+    font-size: 18pt;
+    font-weight: bold;
+    display: flex;
+
+    background: #162412;
+    border-radius: 25px;
+    padding: 20px;
+}
+    

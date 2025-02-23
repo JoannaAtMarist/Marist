@@ -1,0 +1,58 @@
+/* CSS for Members Page */
+
+
+/* Highlights the "Members" button when on the members page */
+#membersBtn {
+    background-color: #49773c;
+}
+
+/* Sets the background color and ensures the background image stays fixed */ 
+body {
+
+    background-color: #3f1242;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Centers content in the main area */
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Background color for content areas */
+article, aside {
+    background-color: #b3d4aa;
+}
+
+/* Typography */
+h1 {
+    font-size: 25px;
+}
+h2 {
+    color: #f9ebfa;
+}
+
+/* Controls the size of member images */
+img {
+    width: 45%; 
+    height: auto; 
+    margin-right: 15px;
+}
+
+/* Styles for individual member profile boxes */
+.membersBox {
+    background-color: #def8d7;
+    color: #3f1242;
+    width: 600px;
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+
+    /* Adds shadow effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

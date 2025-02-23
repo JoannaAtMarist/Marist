@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/registration.css">
+    <title>Registration</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Violet Avenue Gardeners</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li id="homeBtn" class="clicky">Home</li>
+            <li id="registrationBtn" class="clicky">Registration</li>
+            <li id="loginBtn" class="clicky">Login</li>
+            <li id="profileBtn" class="clicky">Profile</li>
+            <li id="membersBtn" class="clicky">Members</li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="mainContent">
+            <article>
+                <h1>Register with Us:</h1>
+                <form name="regForm" id="regForm">
+
+                    <p><label for="firstName">First Name: </label><br>
+                        <input type="text" id="firstName" name="firstName" size="40" placeholder="First Name">
+                    </p>
+
+                    <p><label for="lastName">Last Name: </label><br>
+                        <input type="text" id="lastName" name="lastName" size="40" placeholder="Last Name">
+                    </p>
+
+                    <p><label for="dob">Date of Birth: </label><br>
+                        <input type="date" id="dob" name="dob" placeholder="Date of Birth">
+                    </p>
+
+                    <p><label for="phoneNumber">Phone number: </label><br>
+                        <input type="text" id="phoneNumber" name="phoneNumber" size="10" placeholder="Phone Number">
+                    </p>
+
+                    <p><label for="zipCode">Your Zip Code: </label><br>
+                        <input type="text" id="zipCode" name="zipCode" size="10" placeholder="00000">
+                    </p>
+
+                    <p><label for="email">Email: </label><br>
+                        <input type="email" id="email" name="email" size="50" placeholder="Email" required>
+                    </p>
+
+                    <p><label for="password">Password: </label><br>
+                        <input type="password" id="password" name="password" size="50" placeholder="" required>
+                    </p>
+
+                    <div id="buttonDiv">
+                        <input type="button" class="button" value="Back" id="backBtn">
+                        <input type="reset" class="button" value="Reset" id="resetBtn">
+                        <input type="submit" class="button" value="Submit" id="submitBtn">
+                    </div>
+                </form>
+            </article>
+
+            <aside>
+                <div class="dataBox" id="dataBox1">
+                    <img src="/images/AP_3490.JPG" />
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <script src="/js/global.js"></script>
+    <script src="/js/registration.js"></script>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>

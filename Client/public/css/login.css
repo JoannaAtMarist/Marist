@@ -1,0 +1,23 @@
+/* CSS for Login Page */
+
+
+/* Highlights the "Login" button when on the login page */ 
+#loginBtn {
+    background-color: #49773c;
+}
+
+/* Sets the background color for the login page */ 
+body {
+    background-color: #b3d4aa;
+}
+
+/* Ensures content sections have matching backgrounds */
+article,
+aside {
+    background-color: #b3d4aa;
+}
+
+/* Adds spacing below the password input field to separate it from the submit button */
+input[type="password"] {
+    margin-bottom: 15px; 
+}

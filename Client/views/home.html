@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Home</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Violet Avenue Gardeners</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li id="homeBtn" class="clicky">Home</li>
+            <li id="registrationBtn" class="clicky">Registration</li>
+            <li id="loginBtn" class="clicky">Login</li>
+            <li id="profileBtn" class="clicky">Profile</li>
+            <li id="membersBtn" class="clicky">Members</li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="mainContent">
+
+            <article>
+                <h1>About Us</h1>
+                <p>Here is stuff about us. I think we are gardeners.
+                    Perhaps we are a club? Or just a community garden?
+                    We haven't decided yet.</p>
+                <h1>Happy Plants!</h1>
+                <p>Visit our site for gardening tips.
+                    Our local weather and moon phase guide will help you plan your harvests.
+                </p>
+                <br><br>
+                <div id="picture">
+                    <img src="/images/AP_3386.JPG" /><img src="/images/AP_3385.JPG" />
+                    <p>Photos by member Patti W.</p>
+                </div>
+            </article>
+
+            <aside>
+
+                <div class="dataBox" id="weatherByZipBox">
+                    <p>Enter a ZIP code below to get weather data for that area:</p>
+                    <form id="zipForm">
+                        <label for="zipInput">ZIP Code:</label>
+                        <input type="text" id="zipInput" name="zip" placeholder="Enter ZIP Code:">
+                        <button type="submit">Get Weather</button>
+                    </form>
+                    <br><br>
+                    <div id="weatherByZip">
+                        <h3>Weather for ZIP Code:</h3>
+                        <p>Data will appear here...</p>
+                    </div>
+                </div>
+
+                <div class="dataBox" id="allWeatherData">
+                    <p>Loading...</p>
+                </div>
+
+            </aside>
+        </div>
+    </section>
+
+    <script src="/js/global.js"></script>
+    <script src="/js/home.js"></script>
+
+</body>
+
+<footer>
+</footer>
+
+</html>

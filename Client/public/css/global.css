@@ -1,0 +1,128 @@
+/* Global CSS for all pages */
+
+
+/* General body styling */
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #020001;
+    height: 100%;
+}
+
+/* Main content container (keeps things centered and structured) */
+.mainContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+/* Page Sections: Article (Left) & Aside (Right) */
+article,
+aside {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Left content section */ 
+article {
+    flex: 0 1 65%;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+/* Right content section */
+aside {
+    flex: 0 1 40%;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+/* Navigation Bar */ 
+nav {
+    width: 100%;
+    background-color: #162412;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #162412;
+    color: #f9ebfa;
+}
+
+nav ul li {
+    float: left;
+}
+
+/* Navigation links */
+.clicky {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.clicky:hover {
+    background-color: #49773c;
+    cursor: pointer;
+}
+
+/* Header & Footer */
+header,
+footer {
+    width: 100%;
+}
+
+header {
+    background-image: linear-gradient(#0099ff, #b3e0ff);
+    background-color: #162412;
+    color: black;
+    height: 70px;
+}
+
+header h1 {
+    position: relative;
+    top: 50%;
+    font-size: xx-large;
+    text-align: center;
+    margin: 0;
+}
+
+footer {
+    float: left;
+}
+
+/* Button Styles */
+.button {
+    background-color: #3f1242;
+    font-size: 17px;
+    color: #f9ebfa;
+    line-height: 17px;
+    padding: 9px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.button:hover {
+    background: #9f21c0;
+}
+
+.button:active {
+    background: #9f21c0;
+}
+
+/* Hide Members button by default until login status is checked */
+#membersBtn {
+    display: none;
+}
